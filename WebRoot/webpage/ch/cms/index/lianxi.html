@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>创联致信-全栈敏捷运维软件提供商</title>
+	<link rel="stylesheet" href="/webpage/ch/cms/public/css/page.css">
+	<script src="/webpage/ch/cms/public/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=FRjmejsQDMF02yiUElY9xHjo5m72eEFg"></script>
+</head>
+<body>
+	<div class="content back-fff" id="content" name="content">
+		<div class="warp bannerWarp borB4-dee1e5">
+			<img class="bannerImg video" src="/webpage/ch/cms/public/images/banner_lianxi.jpg" alt="">
+			<div class="con">
+				<p>挖潜IT价值 助力客户业务高效运营</p>
+				<img
+					class="playIcon"
+					videoHref="http://webanli.daxiangqun.net/webpage/ch/cms/video/sucai2.mp4" src="/webpage/ch/cms/public/images/playIcon.png"
+					alt=""
+				/>
+			</div>
+		</div>
+		<script>
+			$(".playIcon").on("click",function(){
+				$(this).attr("videoHref")
+				$(document.body).prepend($("#videoMaskTemplate").html())
+				$(".videoMask video").attr("src",$(this).attr("videoHref"))[0].play()
+			})
+		</script>
+		<script id="videoMaskTemplate" type="text/template">
+			<div class="videoMask">
+				<div class="bg"></div>
+				<div class="con">
+					<div class="close" onclick='$(".videoMask").remove()'>关闭</div>
+					<video
+						src=""
+						controls="controls"
+						width="90%"
+						height="100%"
+					>
+					</video>
+				</div>
+			</div>
+		</script>
+		<style>
+			.mapImg{
+				display: block;
+				margin: 50px auto 0;
+			}
+			.lianxiList{
+				width: 1076px;
+				margin-top: 100px;
+			}
+			.lianxiList .p{
+				color:#4c5058;
+				font-size: 20px;
+				font-weight: 800;
+				height: 32px;
+				line-height: 32px;
+			}
+			.lianxiList .text{
+				color:#4c5058;
+				font-size: 14px;
+				height: 32px;
+				line-height: 32px;
+			}
+			.map{
+				width:1078px;
+				height: 584px;
+				margin: 50px auto 0;
+			}
+		</style>
+		<div class="map" id="allmap">
+			
+		</div>
+		<script>
+			var map = new BMap.Map("allmap");
+		  map.centerAndZoom(new BMap.Point(116.362372,40.037869),16);
+		  map.enableScrollWheelZoom(true);
+		  map.clearOverlays(); 
+	      var new_point = new BMap.Point(116.362372,40.037869);
+	      var marker = new BMap.Marker(new_point);  // 创建标注
+	      map.addOverlay(marker);              // 将标注添加到地图中
+	      map.panTo(new_point);      
+		</script>
+		<div class="lianxiList mauto">
+			<p class="p">北京总部</p>
+			<p class="text">地址：北京市海淀区中关村永泰创新园A座318号</p>
+			<p class="text">电话：010-82746952-801</p>
+			<p class="text">传真：010-82746952-805</p>
+			<p class="text">邮箱：itime@iufc.cn</p>
+			<p class="p">研发中心</p>
+			<p class="text">研发中心：宁波市鄞州区泰康中路666号迪趣大厦1688号</p>
+			<p class="text">电话：010-82746952-801</p>
+			<p class="text">传真：010-82746952-805</p>
+			<p class="text">邮箱：itime@iufc.cn</p>
+			<p class="p">广州办事处</p>
+			<p class="text">研发中心：广州市天河区林和西横路62号</p>
+			<p class="text">电话：010-82746952-801</p>
+			<p class="text">传真：010-82746952-805</p>
+			<p class="text">邮箱：itime@iufc.cn</p>
+			<p class="p">太原办事处</p>
+			<p class="text">研发中心：山西省太原市长风西街1号丽华大厦B座219</p>
+			<p class="text">电话：010-82746952-801</p>
+			<p class="text">传真：010-82746952-805</p>
+			<p class="text">邮箱：itime@iufc.cn</p>
+			<p class="p">锦州办事处</p>
+			<p class="text">研发中心：辽宁省锦州市解放路四段8-1号</p>
+			<p class="text">电话：010-82746952-801</p>
+			<p class="text">传真：010-82746952-805</p>
+			<p class="text">邮箱：itime@iufc.cn</p>
+
+		</div>
+		<script>
+		shareHTML();
+		function shareHTML(){
+			$("<div>").load('/webpage/ch/cms/include/share.html',function(text){
+				$(document.body).prepend(text)
+				menuHTML();
+			})
+		}
+		function menuHTML(){
+			$("<div>").load('/webpage/ch/cms/include/menu.html',function(text){
+				$(".content").prepend(text)
+				cooperationHTML();		
+			})
+		}
+		function cooperationHTML(){
+			$("<div>").load('/webpage/ch/cms/include/cooperation.html',function(text){
+				$(".content").append(text)
+				footerHTML();		
+			})
+		}
+		
+		function footerHTML(){
+			$("<div>").load('/webpage/ch/cms/include/footer.html',function(text){
+				$(".content").append(text)
+				frendLinkHTML();
+			})
+		}
+		function frendLinkHTML(){
+			$("<div>").load('/webpage/ch/cms/include/frendLink.html',function(text){
+				$(".content").append(text)
+			})
+		}
+		</script>
+	</div>
+</body>
+</html>

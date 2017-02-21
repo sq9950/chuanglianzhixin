@@ -1,0 +1,542 @@
+*{
+  margin:0;
+  padding:0;
+}
+img{
+  border:none;
+}
+ul,li{
+  list-style: none;
+}
+html,body{
+  height: 100%;
+}
+body{
+  font-family: "Microsoft YaHei","黑体";
+  overflow-y: scroll;
+}
+a{
+  text-decoration: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden
+}
+/*font*/
+.fz0{
+  font-size: 0px;
+}
+.fz12{
+  font-size: 12px;
+}
+.fz14{
+  font-size: 14px;
+}
+.fz15{
+  font-size: 15px;
+}
+.fz16{
+  font-size: 16px;
+}
+.fz18{
+  font-size: 18px;
+}
+.fz20{
+  font-size: 20px;
+}
+.fz24{
+  font-size: 24px;
+}
+.fz30{
+  font-size: 30px;
+}
+.fz36{
+  font-size: 36px;
+}
+/*border*/
+.borB1Dash-aaa {
+  border-bottom:1px dashed #aaaaaa
+}
+.borB4-dee1e5{
+  border-bottom:4px solid #dee1e5
+}
+/*color*/
+.col-4c5058{
+  color:#4c5058;
+}
+.col-f51010{
+  color: #f51010
+}
+.col-1296db{
+  color: #1296db
+}
+.col-838b9b{
+  color:#838b9b
+}
+.col-585859{
+  color: #585859
+}
+/*fixed*/
+.col-2{
+  width:50%;
+}
+.col-3{
+  width:33.33333333333333%;
+}
+.col-4{
+  width:25%;
+}
+/*padding*/
+.pb10{
+  padding-bottom: 10px;
+}
+/*margin*/
+.mauto{
+  margin-left: auto;
+  margin-right: auto;
+}
+/*background*/
+.back-f0f3f8{
+  background-color: #f0f3f8;
+}
+.back-eaeaea{
+  background-color: #eaeaea;
+}
+.back-fff{
+  background-color: #fff;
+}
+.back-bde7f7{
+  background-color: #bde7f7
+}
+/*public*/
+.h100{
+  height: 100%;
+}
+.w100{
+  width: 100%;
+}
+.pt1{
+  padding-top: 1px;
+}
+.pos-rev,
+.posirev{
+  position: relative;
+}
+.fw8{
+  font-weight: 800;
+}
+.back-6a4182{
+  background-color: #6a4182;
+}
+.back-efeff1{
+  background-color: #efeff1;
+}
+.back-f1f0f0{
+  background-color: #f1f0f0;
+}
+.text-cen{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+
+.none{
+  display: none;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float: right;
+}
+.block{
+  display: block;
+}
+.posRev{
+  position: relative;
+}
+.overHiden{
+  overflow: hidden;
+}
+.w1280{
+  width:1260px;
+  min-width:1260px;
+}
+.w1200{
+  width:1200px;
+}
+/*页面*/
+.warp{
+  width:100%;
+  min-width:1260px;
+}
+.menu-warp{
+  background-color: #121212; 
+}
+.menu-warp:hover{
+  background-color: #1f1f1f;
+}
+
+.menu{
+  width:1260px;
+  height: 66px;
+  line-height: 66px;
+  margin:0 auto;
+}
+.menu .logoImg{
+  margin-top:15px;
+  margin-left:40px;
+  vertical-align: middle;
+}
+.menu .list{
+  margin-left:50px;
+  font-size: 16px;
+  color:#fff;
+}
+.menu .list li{
+  display: block;
+  float: left;
+  text-align: left;
+  position: relative;
+}
+/*下一级菜单*/
+.menu .list li .subordinate{
+  width: 124px;
+  text-align:center;
+  background-color: #ccc;
+  border:1px solid #666666;
+  border-top:none;
+  border-radius: 5px;
+  font-size: 14px;
+  
+}
+.menu .list li .product,
+.menu .list li .subordinate{
+  height: 0px;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  top:66px;
+  left:50px;
+  z-index: 1111;
+  display: none
+  
+}
+/*.menu .list li:hover .product,
+.menu .list li:hover .subordinate{
+  display: block;
+}*/
+.menu .list li .subordinate a{
+  height: 27px;
+  line-height: 27px;
+  color: #717171;
+  display: block;
+}
+.menu .list li .product{
+  width: 700px;
+  border:1px solid #666666;
+  border-radius: 5px;
+  
+}
+.menu .list li .productCon{
+  padding:20px;
+}
+.menu .list li .product div{
+
+}
+.menu .list li .product a{
+  display: block;
+  width:50%;
+  color:#707271;
+  float: left;
+
+}
+.menu .list li .product a .p{
+  margin-left:20px;
+  margin-top:14px;
+  line-height: 14px;
+}
+.menu .list li .product a .text{
+  margin-left:20px;
+  margin-top:6px;
+  line-height: 12px;
+}
+
+/***************************************************/
+.menu .list .a{
+  display: block;
+  float: left;
+  margin-left: 50px;
+  color:#fff;
+}
+.menu .list a:hover{
+  color:#1296db;
+}
+
+.menu .link .yuyue{
+  margin-right:50px;
+}
+.menu .link .yuyue a{
+  width:92px;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background-color: #156f8e;
+  text-align: center;
+  font-size:15px;
+  color:#fff;
+  border-radius: 5px;
+  margin-top:19px;
+}
+.menu .link .yuyue a:hover{
+  background-color: #fff;
+  color:#156f8e
+}
+.menu .link .tel{
+  margin-right:100px;
+}
+.menu .link .tel a{
+  height: 22px; 
+  line-height: 22px;
+  padding-left:30px;
+  margin-top:22px;
+  display: block;
+  background:url(/webpage/ch/cms/public/images/tel.png) no-repeat;
+  color:#fff;
+}
+.defaultBtn{
+  width:147px;
+  height: 36px;
+  line-height: 36px;
+  margin-left:auto;
+  margin-right:auto;
+  border:1px solid #1296db;
+  border-radius: 5px;
+  background-color:#fff;
+  color: #1296db;
+  display: block;
+  text-align: center;
+}
+/***************************************/
+.bannerWarp{
+  height: 258px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 35px solid #eaeaea;
+}
+.bannerWarp .con{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.bannerWarp .con p{
+  text-align: center;
+  margin-top:83px;
+  color:#fff;
+  font-size: 30px;
+}
+.bannerWarp .con img{
+  display: block;
+  margin:38px auto 0px auto;
+}
+.bannerImg{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-960px;
+  margin-top:-129px;
+}
+/**************************************/
+.cooperation{
+  background-color: #00b1ed;
+  height: 179px;
+  line-height: 179px;
+  margin-top:94px;
+}
+.cooperation .con{
+  width:1260px;
+  height: 100%;
+  margin:0 auto;
+  position: relative;
+}
+.cooperation .list{
+  width:25%;
+  height: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.cooperation .list img{
+  margin-right: 16px;
+  vertical-align: middle;
+}
+.cooperation .list span{
+  height: 26px;
+  font-size: 24px;
+  display: inline-block;
+  color: #fff;
+  line-height: 26px;
+}
+.cooperation .borList .bor{
+  width:2px; height: 26px;
+  position: absolute;
+  top:76px;
+  background-color: #fff;
+}
+.cooperation .borList .bor1{
+  left:25%;
+}
+.cooperation .borList .bor2{
+  left:50%;
+}
+.cooperation .borList .bor3{
+  left:75%;
+}
+/**********************************/
+.footer_warp{
+  background-color: #6c7480
+}
+.footer{
+  width:1190px;
+  margin:20px auto 0px;
+  padding-top:36px;
+  padding-bottom:36px;
+}
+.footer .nav{
+  float: left;
+}
+.footer .nav1 div{
+  width:50%;
+}
+.footer .p{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom:23px;
+}
+.footer .nav1 a{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+}
+.footer .nav2{
+  color: #fff;
+}
+.footer .nav3 .tel{
+  width: 248px;
+  border-bottom: 1px solid #fff;
+  font-size: 26px;
+  color: #fff;
+  padding-bottom: 18px;
+}
+.footer .nav3 .text{
+  margin-top:10px;
+  line-height: 27px;
+  color: #fff;
+}
+/**************************/
+.frendLink_warp{
+  background-color: #4c5159;
+}
+.frendLink{
+  width:1260px;
+  margin:0 auto;
+  padding-top:21px;
+  padding-bottom:27px;
+  text-align: center;
+}
+.frendLink .con{
+  color: #fff;
+}
+.frendLink a{
+  color: #f3f3f4;
+  margin-left:15px;
+}
+.frendLink .p{
+  color: #fff;
+  margin-top:14px;
+}
+/*****************************/
+.shareCon{
+  width:50px;
+  height: 157px;
+  position: fixed;
+  top:50%;
+  margin-top:-78px;
+  right:16px;
+  z-index: 99;
+}
+.shareCon .list{
+  width:48px;
+  height: 48px;
+  line-height: 48px;
+  border:1px solid #9ca0a6;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+}
+.shareCon .list img{
+  vertical-align: middle;
+}
+.shareCon .fastTop{
+  margin-top:8px;
+}
+.shareCon .weixinCon{
+  position: absolute;
+  top:-55px;
+  left:-130px;
+  width:129px;
+  display: none;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+.shareCon .weixinList:hover .weixinCon{
+  display: block;
+}
+/*videoMask*/
+
+.videoMask{
+  width:100%;
+  height: 100%;
+  position: fixed;
+  z-index: 22;
+}
+.videoMask .bg{
+  width:100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6
+}
+.videoMask .con{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.videoMask .con video{
+  margin-left:5%;
+}
+.videoMask .con .close{
+  width:80px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  top:20px;
+  right:20px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>创联致信-全栈敏捷运维软件提供商</title>
+  <link rel="stylesheet" href="/webpage/ch/cms/public/css/page.css">
+  <script src="/webpage/ch/cms/public/js/jquery-1.8.3.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="content back-f0f3f8" id="content" name="content">
+    <style>
+      .bannerWarp{
+        height: 556px;
+        border-bottom: none;
+      }
+      .bannerImg{
+        margin-top:-278px;
+      }
+      .bannerCon{
+        position: absolute;
+        height: 100%;
+      }
+      .bannerCon .banner_jichusheshi{
+        position: absolute;
+        bottom:0;
+        right: 0px;
+      }
+      .bannerCon .conImg{
+        position: absolute;
+        top:120px;
+        right:0px;
+      }
+      /*con 的class名被污染了*/
+      .bannerCon ._con p{
+        text-align: left;
+        color:#fff;
+      }
+      .bannerCon ._con .p1{
+        height: 60px;
+        line-height: 60px;
+        font-size: 40px;
+        margin-top:140px;
+        text-align: left;
+      }
+      .bannerCon ._con .text{
+        padding-left:30px;
+        margin-top:36px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 18px;
+        border-left:5px solid #83d908;
+      }
+      .bannerCon .btn{
+        width: 185px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        color: #fff;
+        display: block;
+        margin-top:25px;
+        margin-left:150px;
+        background-color: rgba(0,0,0,.1)
+      }
+      .bannerCon .btn img{
+        vertical-align: middle;
+      }
+    </style>
+    <div class="warp bannerWarp borB4-dee1e5">
+      <img class="bannerImg" src="/webpage/ch/cms/public/images/product/banner_minjie.jpg" alt="">
+      <div class="w100 h100 bannerCon">
+        <div class="w1280 mauto h100 pos-rev">
+          <img class="conImg" src="/webpage/ch/cms/public/images/product/minjie_bannerCon.jpg" alt="">
+          <div class="_con pt1">
+                <p class="p1">
+                  <img src="/webpage/ch/cms/public/images/product/minjie_bannerImg1.png" alt="">
+                  <span>敏捷型运维服务管理</span>
+                </p>
+                <p class="text">
+                  通过整合碎片化管理元素，将工作内容服务化，
+                  <br />
+                  工作方式流程化，运维数据绩效化。结合恰当的
+                  <br />
+                  CMDB模型及任务驱动引擎，提升团队成熟度，
+                  <br />
+                  改善服务满意度。
+                </p>
+                <a class="btn block" href="javascript:;" videoHref="http://clzx.daxiangqun.net/webpage/ch/cms/public/video/minjie.mp4" >
+                  <img src="/webpage/ch/cms/public/images/product/bofangIcon.png" alt="" />
+                  <span>视频演示</span>
+                </a>
+              </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".bannerCon .btn").on("click",function(){
+        $(this).attr("videoHref")
+        var $html = $($("#videoMaskTemplate").html())
+        var mt = ($(window).height())*0.1+"px"
+        $html.find("video").css({
+          "margin-top":mt,
+          width:($(window).height())*0.8*1.7777336898,
+          height:($(window).height())*0.8
+        })
+        $(document.body).prepend($html)
+        $(".videoMask video").attr("src",$(this).attr("videoHref"))[0].play()
+      })
+    </script>
+    <script id="videoMaskTemplate" type="text/template">
+      <div class="videoMask">
+        <div class="bg"></div>
+        <div class="con">
+          <div class="close" onclick='$(".videoMask").remove()'>关闭</div>
+          <video
+            src=""
+            style="margin-left: auto;margin-right: auto;display: block;"
+            controls="controls"
+            autoplay="autoplay"
+          >
+          </video>
+        </div>
+      </div>
+    </script>
+    <style>
+      .linianCon{
+        padding-bottom:170px;
+      }
+      .linianCon .p{
+        margin-top: 142px;
+      }
+      .linianCon .text{
+        margin-top: 75px;
+        line-height: 40px;
+      }
+      .linianCon .list{
+        width: 33.333333%;
+        margin-top:83px;
+        float: left;
+      }
+      .linianCon .list p{
+        margin-top:35px;
+        color: #424e5f;
+        font-size: 18px;
+      }
+    </style>
+    <div class="warp back-fff pt1">
+      <div class="w1200 mauto linianCon text-cen">
+        <p class="p col-040404 fw8 fz36">产品核心理念</p>
+        <p class="text col-838b9b text-left">敏捷型运维管理平台是创联近10年各种场景运维管理经验的沉淀结果。结合目前信息化管理的发展形势，融合本地化的ITIL实践，创造出一套以服务为驱动的管理模型。通过整合碎片化管理元素，将管理集中化，将工作内容服务化，工作方式流程化，工作数据绩效化。加之恰当的CMDB配置以及合理的工作驱动模型，提升服务满意度，增加团队成熟度，让运维管理更加清晰和完善。</p>
+        <div class="clearfix">
+          <div class="list">
+            <img src="/webpage/ch/cms/public/images/product/linian_list1.jpg" alt="">
+            <p>集中化</p>
+          </div>
+          <div class="list">
+            <img src="/webpage/ch/cms/public/images/product/linian_list2.jpg" alt="">
+            <p>敏捷化</p>
+          </div>
+          <div class="list">
+            <img src="/webpage/ch/cms/public/images/product/linian_list3.jpg" alt="">
+            <p>场景化
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .moxingCon{
+        padding-bottom:112px;
+      }
+      .moxingCon .p{
+        margin-top: 142px;
+      }
+      .moxingCon .text{
+        margin-top: 33px;
+      }
+      .moxingCon img{
+        margin-top: 95px;
+      }
+    </style>
+    <div class="warp back-f1f0f0 pt1">
+      <div class="w1200 mauto moxingCon text-cen">
+        <p class="p col-040404 fw8 fz36">产品管理模型</p>
+        <p class="text col-585859 fz18">服务目录为核心，驱动运维工作有序执行</p>
+        <img class="block mauto" src="/webpage/ch/cms/public/images/product/chanpinmoxing_img.jpg" alt="">
+      </div>
+    </div>
+    <style>
+      .qudongCon{
+        padding-bottom:170px;
+      }
+      .qudongCon .p{
+        margin-top: 142px;
+      }
+      .qudongCon .text{
+        margin-top: 75px;
+        line-height: 40px;
+      }
+      .qudongCon img{
+        margin-top: 100px;
+      }
+    </style>
+    <div class="warp back-fff pt1">
+      <div class="w1200 mauto qudongCon text-cen">
+        <p class="p col-040404 fw8 fz36">服务目录驱动流程场景</p>
+        <p class="text col-838b9b text-left">敏捷运维管理产品的服务目录作为服务管理的工作驱动引擎，通过有效的整合服务内容、服务形式、服务团队以及服务KPI，将您的运维内容从制度转化为具体工作。在描述了服务部门对外所提供服务内容的同时，也在内部工作中起到了积极的作用。</p>
+        <img class="block mauto" src="/webpage/ch/cms/public/images/product/qudongliucheng_img.jpg" alt="">
+      </div>
+    </div>
+    <div class="warp back-fff pt1">
+      <div class="w1200 mauto qudongCon text-cen">
+        <p class="p col-040404 fw8 fz36">服务台工作场景</p>
+        <p class="text col-838b9b text-left">敏捷运维管理产品始终致力于如何提高服务的满意度提升服务质量。通过对服务台管理的引入，可极大的提高您的服务满意度。在现实场景中，使用了服务台管理模型的所有服务单位，在服务满意度上都有提升！服务台管理不仅能让被服务者了解您，更能让您对内部员工的工作协调得心应手。通过配置服务台管理模式，加之以多种的服务窗口，让被服务者时刻感觉您就在他们身边。服务台岗位识别被服务者所提服务请求，通过匹配预设的服务目录，让被服务者安心的等待服务的到来。</p>
+        <img class="block mauto" src="/webpage/ch/cms/public/images/product/fuwutai_img.jpg" alt="">
+      </div>
+    </div>
+    <style>
+      .jieshaoCon{
+        width:1160px;
+      }
+      .jieshaoCon .con{
+        padding-top: 141px;
+        padding-bottom: 110px;
+      }
+      .jieshaoCon .p1{
+        color: #040404;
+        margin-top:133px;
+        font-size: 36px;
+      }
+      .jieshaoCon .p2{
+        color: #585859;
+        margin-top:34px;
+        font-size: 18px;
+      }
+      .jieshaoCon .listP{
+        margin-top:34px;
+      }
+      .jieshaoCon .p3{
+        color: #585859;
+        margin-top:15px;
+        font-size: 13px;
+        padding-left:28px;
+        background: url(/webpage/ch/cms/public/images/product/jieshaoCon_p3_bg.jpg) no-repeat;
+      }
+    </style>
+    <div class="warp back-fff">
+      <div class="jieshaoCon mauto">
+        <div class="con clearfix">
+          <img class="fr" src="/webpage/ch/cms/public/images/product/jiankongzhongxin_jieshao5.jpg" alt="">
+          <div class="fl">
+            <p class="p1">灵活易用的事件管理</p>
+            <p class="p2">配置灵活，多途径入口，服务驱动</p>
+            <div class="listP">
+              <p class="p3">灵活的流程配置方式，支持二次开发；</p>
+              <p class="p3">支持语音、微信、开放性网页等多种申告套件；</p>
+              <p class="p3">可针对事件数据进行多维度大数据分析。</p>
+            </div>
+          </div>
+        </div>
+        <div class="con clearfix">
+          <img class="fl" src="/webpage/ch/cms/public/images/product/jiankongzhongxin_jieshao6.jpg" alt="">
+          <div class="fr">
+            <p class="p1">严谨科学的变更管理</p>
+            <p class="p2">场景丰富，基线快照，服务驱动</p>
+            <div class="listP">
+              <p class="p3">支持对多类型场景变更，管理覆盖广；</p>
+              <p class="p3">变更内容可拆分可集中，变更项快照留存；</p>
+              <p class="p3">可对变更流程灵活扩展；</p>
+            </div>
+          </div>
+        </div>
+        <div class="con clearfix">
+          <img class="fr" src="/webpage/ch/cms/public/images/product/jiankongzhongxin_jieshao7.jpg" alt="">
+          <div class="fl">
+            <p class="p1">高效可配的巡检管理</p>
+            <p class="p2">全面的数字化巡检管理，实现线下至线上的转变</p>
+            <div class="listP">
+              <p class="p3">支持可配置的规格化巡检模板；</p>
+              <p class="p3">支持巡检任务的自动化调度；</p>
+              <p class="p3">支持纸质巡检的数据化导入与分析。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .h5guanliCon{
+        padding-bottom:170px;
+      }
+      .h5guanliCon .p{
+        margin-top: 142px;
+      }
+      .h5guanliCon .text{
+        margin-top: 75px;
+        line-height: 40px;
+      }
+      .h5guanliCon img{
+        margin-top: 100px;
+      }
+    </style>
+    <div class="warp back-fff pt1">
+      <div class="w1200 mauto h5guanliCon text-cen">
+        <p class="p col-040404 fw8 fz36">移动端运维管理</p>
+        <p class="text col-838b9b text-left">实现运维工作的全面移动化，无处不在的服务支持引入微信企业号拍照与语音识别，让运维贴心；实时的微信消息提醒，随时掌握服务进度；无处不在的服务调度中心，工作就在指尖。</p>
+        <img class="block mauto" src="/webpage/ch/cms/public/images/product/h5guanli.jpg" alt="">
+      </div>
+    </div>
+    <style>
+      .runCon{
+        width:1200px;
+      }
+      .runCon .title{
+        font-size: 30px;
+        margin-top: 88px;
+        margin-bottom: 78px;
+      }
+      .runCon .list{
+        color: #585859;
+      }
+      .runCon .list1{
+        width:30%;
+      }
+      .runCon .list2{
+        width:30%;
+      }
+      .runCon .list3{
+        width:40%;
+      }
+      .runCon .list .p{
+        font-weight: 800;
+        font-size: 16px;
+      }
+      .runCon .list{
+        list-style-type:disc;
+      }
+      .runCon .list .text{
+        margin-top:23px;
+        font-size: 14px;
+        list-style-type:disc; 
+      }
+    </style>
+    <div class="warp">
+      <div class="runCon w1200 mauto">
+        <p class="title">运行环境</p>
+        <div class="clearfix">
+          <div class="list list1 fl">
+            <p class="p">服务器要求配置如下：</p>
+            <p class="text"><strong>•</strong>&nbsp;4C 12G起  200G可用空间</p>
+            <p class="text"><strong>•</strong>&nbsp;Windows Server 2008+、Linux、Aix</p>
+          </div>
+          <div class="list list2 fl">
+            <p class="p">客户端要求：</p>
+            <p class="text"><strong>•</strong>&nbsp;IE10+浏览器、Chrome</p>
+            <p class="text"><strong>•</strong>&nbsp;支持1080P全高清显示器</p>
+          </div>
+          <div class="list list3 fl">
+            <p class="p">常见服务器配置支持规模：</p>
+            <p class="text"><strong>•</strong>&nbsp;4C12G--支持300网络设备、200主机、20数据库、60应用系统</p>
+            <p class="text"><strong>•</strong>&nbsp;8C16G--支持500网络设备、350主机、50数据库、100应用系统</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    shareHTML();
+    function shareHTML(){
+      $("<div>").load('/webpage/ch/cms/include/share.html',function(text){
+        $(document.body).prepend(text)
+        menuHTML();
+      })
+    }
+    function menuHTML(){
+      $("<div>").load('/webpage/ch/cms/include/menu.html',function(text){
+        $(".content").prepend(text)
+        cooperationHTML();    
+      })
+    }
+    function cooperationHTML(){
+      $("<div>").load('/webpage/ch/cms/include/cooperation.html',function(text){
+        $(".content").append(text)
+        footerHTML();   
+      })
+    }
+    
+    function footerHTML(){
+      $("<div>").load('/webpage/ch/cms/include/footer.html',function(text){
+        $(".content").append(text)
+        frendLinkHTML();
+      })
+    }
+    function frendLinkHTML(){
+      $("<div>").load('/webpage/ch/cms/include/frendLink.html',function(text){
+        $(".content").append(text)
+      })
+    }
+    </script>
+  </div>
+</body>
+</html>

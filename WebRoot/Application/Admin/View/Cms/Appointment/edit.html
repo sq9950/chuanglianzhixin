@@ -1,0 +1,82 @@
+<div class="pageContent">
+	<form method="post" action="/index.php/Admin/Cms/Appointment/update/navTabId/classID{$vo.classID}/callbackType/closeCurrent"    class="pageForm required-validate" 
+	onsubmit="return iframeCallback(this, navTabAjaxDone);">
+	<?php  //窗体组件采用这个 iframeCallback(this, navTabAjaxDone); ?>
+	<input type="hidden" name="id" value="{$vo.id}"/>
+	<input type="hidden" name="formstatus" value="{$formstatus}" />
+	<div class="pageFormContent nowrap" layoutH="97"> 
+		<dl>
+			<dt>公司名称：</dt>
+			<dd><input type="text" value="{$vo.company}" style="width:350px" name="company"/></dd> 
+		</dl> 
+		<dl>
+			<dt>联系人：</dt>
+			<dd><input type="text" value="{$vo.contacts}" style="width:350px" name="contacts"/></dd> 
+		</dl>
+		<dl>
+			<dt>部门：</dt>
+			<dd><input type="text" value="{$vo.department}" style="width:350px" name="department"/></dd> 
+		</dl>
+		<dl>
+			<dt>联系电话：</dt>
+			<dd><input type="text" value="{$vo.phone}" style="width:350px" name="phone"/></dd> 
+		</dl>
+		<dl>
+			<dt>电子邮箱:</dt>
+			<dd><input type="text" value="{$vo.email}" style="width:350px" name="email"/></dd> 
+		</dl>
+		<dl>
+			<dt>公司地址：</dt>
+			<dd><input type="text" value="{$vo.addr}" style="width:350px" name="addr"/></dd> 
+		</dl>
+		<dl>
+			<dt>网络设备数量:</dt>
+			<dd><input type="text" value="{$vo.deviceNum}" style="width:350px" name="deviceNum"/></dd> 
+		</dl>
+		<dl>
+			<dt>服务器数量:</dt>
+			<dd><input type="text" value="{$vo.serverNum}" style="width:350px" name="serverNum"/></dd> 
+		</dl>
+
+		<dl>
+			<dt>业务系统数量:</dt>
+			<dd><input type="text" value="{$vo.systemNum}" style="width:350px" name="systemNum"/></dd> 
+		</dl>
+		<dl>
+			<dt>虚拟化厂商:</dt>
+			<dd><input type="text" value="{$vo.virtualNum}" style="width:350px" name="virtualNum"/></dd> 
+		</dl>
+
+		<dl>
+			<dt>预约演示产品：</dt>
+			<dd>  
+				<textarea name="product" style="width:350px;height:100px" >{$vo.product}</textarea>
+			</dd> 
+		</dl>
+		<dl>
+			<dt>发布日期：</dt>
+			<dd>
+				<input type="text" name="writetime" class="date" readonly="true" value="{$vo.writetime|date='Y-m-d', ###}" />
+			</dd>
+		<!-- <dl>
+			<dt>状态：</dt> 
+			<dd>
+				<input type="radio" name="status" value="2"  <eq name="vo['status']" value="2">checked</eq> />暂存 
+				<input type="radio" name="status" value="1"  <eq name="vo['status']" value="1">checked</eq> />提交 
+			</dd> 
+		</dl> -->
+
+		<dl>
+			提示：标注*的项目为必填项目。
+		</dl>
+
+	</div>
+	
+	<div class="formBar" >
+		<ul style="float:left">
+			<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li><li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div></li>
+		</ul>
+	</div>
+</form>
+</div>

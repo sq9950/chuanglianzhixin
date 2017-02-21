@@ -1,0 +1,34 @@
+<div class="shareCon none">
+		<div class="list" style="border-bottom:none;">
+			<a class="shareQQ" href="javascript:;">
+				<img src="/webpage/ch/cms/public/images/share/qq.jpg" alt="">
+			</a>
+		</div>
+		<div class="list weixinList">
+			<a href="javascript:;">
+				<img src="/webpage/ch/cms/public/images/share/weixin.jpg" alt="">
+			</a>
+			<div class="weixinCon">
+				<img class="block" src="/webpage/ch/cms/public/images/erweima_weixin.png" alt="">
+				<p>扫码关注微信公众平台</p>
+			</div>
+		</div>
+		<div class="list fastTop">
+			<a href="#content">
+				<img src="/webpage/ch/cms/public/images/share/top.jpg" alt="">
+			</a>
+		</div>
+	</div>
+	<script>
+	window.onscroll=function(){
+		var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+		if(top>400){
+			$(".shareCon").show()
+		}else{
+			$(".shareCon").hide()
+		}
+	}
+	$(".shareQQ").on("click",function(){
+		$("body").append('<iframe src="tencent://message/?Menu=yes&amp;amp;uin=2609433667&amp;amp;Service=58&amp;amp;SigT=A7F6FEA02730C9886F127BCAA57B87F95C0B154321F0BB5E5C07F31C675DB943514C1FABB86AC9F204C07A4F7992C0E4429CFD21EA6A561094D9AD997A885691E3AC5C7D70EE40794CB828139085D8F28FED7963C95ED313363EF6A167C4D2E1830CCBB246F97E30220B530AADD9ED444892C01F1920B356&amp;amp;SigU=30E5D5233A443AB24963E942C715FD31F7BF74454239AFAF2EBE45EFCB947CF3C8CE12003155AAB6AD1BC9F99FEE71C96E778732EE90B6198EB77D3490B2725A34508A8E2E2784B0" style="display: none;"></iframe>')
+	})
+	</script>

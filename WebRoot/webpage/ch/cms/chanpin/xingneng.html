@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>创联致信-全栈敏捷运维软件提供商</title>
+	<link rel="stylesheet" href="/webpage/ch/cms/public/css/page.css">
+	<script src="/webpage/ch/cms/public/js/jquery-1.8.3.min.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<div class="content back-fff" id="content" name="content">
+		<style>
+			.bannerWarp{
+			  height: 556px;
+			  color:#fff;
+			  border-bottom:1px solid #262a2b;
+			  text-align: center;
+			}
+			.bannerWarp .p{
+				margin-top:82px;
+				font-size: 36px;
+				color:#fff;
+			}
+			.bannerWarp .text{
+				margin-top:34px;
+				font-size: 18px;
+			}
+			.bannerWarp .img{
+				margin-top:50px;
+			}
+			.introduction{
+				width:1060px;
+				padding-top:152px;;
+			}
+			.introduction .p{
+				font-size: 30px;
+				color:#4c5058;
+			}
+			.introduction .text{
+				font-size: 21px;
+				margin-top:49px;
+				line-height: 41px;
+				color:#838b9b;
+				text-align: left;
+			}
+		</style>
+		<div class="warp bannerWarp back-6a4182">
+			<p class="p">Insight应用性能/体验管理</p>
+			<p class="text">通过Insight实时掌控每个系统、每个业务的可用性及每个用户的使用体验。</p>
+			<img class="img" src="/webpage/ch/cms/public/images/banner_product.jpg" alt="">
+		</div>
+		<div class="warp back-fff text-cen">
+			<div class="mauto introduction">
+				<p class="p">产品核心理念</p>
+				<p class="text">Insight通过详实的记录真实用户行为，来了解用户的系统体验是否足够好，帮助运维团队更好的依据数据驱动决策。与普通的真实用户监控产品不同的是，Insight不仅仅提供一些技术指标，如响应时间、平均可操作时间、DOM耗时等等，更多的是让运维团队建立起以用户为中心的指标度量体系，更多的站在用户参与度、任务完成率、路径分析等综合分析的角度去真正贴近用户，为应用系统的快速迭代、持续交付提供基础。</p>
+			</div>
+			<style>
+				.platformList{
+					width:1260px;
+					margin:93px auto 0 auto;
+					text-align: center;
+				}
+				.platformList li{
+					
+				}
+				.platformList .p{
+					margin-top:17px;
+					color:#424e5f;
+					line-height: 28px;
+					font-size: 18.6px;
+				}
+				.platformList li .img_sel{
+					display: none;
+				}
+				/*.platformList li .img:hover .img_sel{
+					display: inline;
+				}
+				.platformList li .img:hover .img{
+					display: none;
+				}*/
+				.imgCon{
+					padding-top:180px;	
+				}
+				.imgCon img{
+					margin-top:74px;
+				}
+			</style>
+			<ul class="platformList clearfix">
+				<li class="col-4 fl">
+					<div class="img">
+						<img class="img" src="/webpage/ch/cms/public/images/product/list1.png" alt="">
+						<img class="img_sel" src="/webpage/ch/cms/public/images/product/list1_sel.png" alt="">
+					</div>
+					<p class="p">自动化埋点<br />全量记录真实用户行为</p>
+				</li>
+				<li class="col-4 fl">
+					<div class="img">
+						<img class="img" src="/webpage/ch/cms/public/images/product/list2.png" alt="">
+						<img class="img_sel" src="/webpage/ch/cms/public/images/product/list2_sel.png" alt="">
+					</div>
+					<p class="p">全方位、多维度<br />用户体验分析</p>
+				</li>
+				<li class="col-4 fl">
+					<div class="img">
+						<img class="img" src="/webpage/ch/cms/public/images/product/list3.png" alt="">
+						<img class="img_sel" src="/webpage/ch/cms/public/images/product/list3_sel.png" alt="">
+					</div>
+					<p class="p">深入洞察<br />用户操作轨迹</p>
+				</li>
+				<li class="col-4 fl">
+					<div class="img">
+						<img class="img" src="/webpage/ch/cms/public/images/product/list4.png" alt="">
+						<img class="img_sel" src="/webpage/ch/cms/public/images/product/list4_sel.png" alt="">
+					</div>
+					<p class="p">自动化识别<br />应用间拓扑关系</p>
+				</li>
+			</ul>
+		</div>
+		<div class="warp back-fff imgCon">
+			<img class="block mauto" src="/webpage/ch/cms/public/images/product/img1.jpg" alt="">
+			<img class="block mauto" src="/webpage/ch/cms/public/images/product/img2.jpg" alt="">
+			<img class="block mauto" src="/webpage/ch/cms/public/images/product/img3.jpg" alt="">
+		</div>
+		<script>
+		shareHTML();
+		function shareHTML(){
+			$("<div>").load('/webpage/ch/cms/include/share.html',function(text){
+				$(document.body).prepend(text)
+				menuHTML();
+			})
+		}
+		function menuHTML(){
+			$("<div>").load('/webpage/ch/cms/include/menu.html',function(text){
+				$(".content").prepend(text)
+				cooperationHTML();		
+			})
+		}
+		function cooperationHTML(){
+			$("<div>").load('/webpage/ch/cms/include/cooperation.html',function(text){
+				$(".content").append(text)
+				footerHTML();		
+			})
+		}
+		
+		function footerHTML(){
+			$("<div>").load('/webpage/ch/cms/include/footer.html',function(text){
+				$(".content").append(text)
+				frendLinkHTML();
+			})
+		}
+		function frendLinkHTML(){
+			$("<div>").load('/webpage/ch/cms/include/frendLink.html',function(text){
+				$(".content").append(text)
+			})
+		}
+		</script>
+	</div>
+</body>
+</html>

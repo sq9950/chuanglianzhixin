@@ -1,0 +1,98 @@
+<div class="warp menu-warp">
+			<div class="menu">
+				<a href="/index.php/Ch/cms/Index/index.html">
+					<img class="logoImg fl" src="/webpage/ch/cms/public/images/logo.png" alt="">
+				</a>
+				<ul class="list">
+					<li>
+						<a class="a" href="/index.php/Ch/cms/Index/index.html">首页</a>
+					</li>
+					<li>
+						<a class="a" href="javascript:;">产品与方案</a>
+						<div class="product fz0" _h="237px">
+							<div class="productCon">
+								<div class="borB1Dash-aaa pb10 clearfix">
+									<a href="/webpage/ch/cms/chanpin/jichusheshi.html">
+										<p class="p fz14">Zues</p>
+										<p class="text fz12">针对大规模数据中心网络及基础设施立体监控</p>
+									</a>
+									<a href="/webpage/ch/cms/chanpin/xingneng.html">
+										<p class="p fz14">Insight</p>
+										<p class="text fz12">应用系统的真实用户体验监控</p>
+									</a>
+									<a href="/webpage/ch/cms/index/null.html">
+										<p class="p fz14">Apm</p>
+										<p class="text fz12">业务交易过程的性能透视，问题定位</p>
+									</a>
+									<a href="/webpage/ch/cms/index/null.html">
+										<p class="p fz14">Automation</p>
+										<p class="text fz12">云时代基础架构到业务应用的全栈自动运维</p>
+									</a>
+									<a href="/webpage/ch/cms/index/null.html">
+										<p class="p fz14">CMDB</p>
+										<p class="text fz12">运维管理元数据，准确映射IT架构</p>
+									</a>
+									<a href="/webpage/ch/cms/chanpin/minjie.html">
+										<p class="p fz14">ITSM</p>
+										<p class="text fz12">敏捷型IT运维过程全流程闭环管理</p>
+									</a>
+								</div>
+								<div class="clearfix">
+									<a href="/webpage/ch/cms/index/null.html">
+										<p class="p fz14">Archive</p>
+										<p class="text fz12">企业档案的全生命周期管理产品</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a class="a" href="javascript:;">服务与支持</a>
+						<div class="subordinate" _h="109px">
+							<div class="subordinateCon">
+								<a href="/webpage/ch/cms/index/support.html">服务支持</a>
+								<a href="/index.php/Ch/cms/Appointment/index.html">预约演示</a>
+								<a href="/webpage/ch/cms/index/null.html">资料下载</a>
+								<a href="/index.php/Ch/cms/Cooperation/index.html">合作加盟</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a class="a" href="/index.php/Ch/Cms/News/index">新闻动态</a>
+					</li>
+					<li>
+						<a class="a" href="/webpage/ch/cms/index/null.html">技术社区</a>
+					</li>
+					<li>
+						<a class="a" href="/webpage/ch/cms/index/about.html">关于我们</a>
+						<div class="subordinate" _h="109px">
+							<div class="subordinateCon">
+								<a href="/webpage/ch/cms/index/about.html">关于我们</a>
+								<a href="/webpage/ch/cms/index/null.html">合作伙伴</a>
+								<a href="/webpage/ch/cms/index/lianxi.html">联系我们</a>
+								<a href="/index.php/Ch/cms/Cooperation/index.html">加入我们</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="link fr">
+					<li class="fr tel">
+						<a href="javascript:;">400-666-8888</a>
+					</li>
+					<li class="fr yuyue">
+						<a href="/index.php/Ch/cms/Appointment/index.html">预约演示</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+<script>
+	$(".menu .list li").hover(function(){
+		var ele = $(this).find(".product,.subordinate").eq(0)
+		var _h = ele.attr("_h")
+		ele.show().stop().animate({height:_h},500)
+	},function(){
+		$(this).find(".product,.subordinate").eq(0).stop().animate({height:"0"},500,function(){
+			$(this).hide()
+		})
+	})
+</script>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>创联致信-全栈敏捷运维软件提供商</title>
+	<link rel="stylesheet" href="/webpage/ch/cms/public/css/page.css">
+	<script src="/webpage/ch/cms/public/js/jquery-1.8.3.min.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<div class="content back-fff" id="content" name="content">
+		<div class="warp bannerWarp borB4-dee1e5">
+			<img class="bannerImg video" src="/webpage/ch/cms/public/images/banner_lianxi.jpg" alt="">
+			<div class="con">
+				<p>挖潜IT价值 助力客户业务高效运营</p>
+				<img
+					class="playIcon"
+					videoHref="http://webanli.daxiangqun.net/webpage/ch/cms/video/sucai2.mp4" src="/webpage/ch/cms/public/images/playIcon.png"
+					alt=""
+				/>
+			</div>
+		</div>
+		<script>
+			$(".playIcon").on("click",function(){
+				$(this).attr("videoHref")
+				$(document.body).prepend($("#videoMaskTemplate").html())
+				$(".videoMask video").attr("src",$(this).attr("videoHref"))[0].play()
+			})
+		</script>
+		<script id="videoMaskTemplate" type="text/template">
+			<div class="videoMask">
+				<div class="bg"></div>
+				<div class="con">
+					<div class="close" onclick='$(".videoMask").remove()'>关闭</div>
+					<video
+						src=""
+						controls="controls"
+						width="90%"
+						height="100%"
+					>
+					</video>
+				</div>
+			</div>
+		</script>
+		<style>
+			.h1{
+				font-size: 20px;
+				font-weight: 800
+			}
+			.aboutH1{
+				margin-top:53px;
+				margin-bottom:36px;
+			}
+			.aboutText{
+				line-height: 46px;
+				text-indent: 24px;
+			}
+			.hrBor{
+				height: 0px;
+				margin-top:70px;
+				border-bottom:1px dashed #b2b2b2;
+			}
+			.cultureH1{
+				margin-top: 58px;
+			}
+		</style>
+		<p class="aboutH1 h1 w1200 mauto">公司介绍</p>
+		<p class="aboutText col-4c5058 w1200 mauto">
+		北京创联致信科技有限公司成立于2012年，秉承“创新、联合、致诚致信”的经营理念，团队基于十余年技术积累和市场深耕，致力于打造“IT 服务高端品牌”创联致信团队凭借对IT运维领域深刻的认知，汇聚了丰富的专业人才服务于政府，电信，银行，烟草，金融，医疗，教育，电商等大中型企业目标客户。公司提供涵盖培训、咨询、软件和服务在内的IT全价值链产品和解决方案 助力客户实现卓越的IT运营。
+		</p>
+		<p class="aboutText col-4c5058 w1200 mauto">
+		公司始终坚持“创新驱动”的理念，投入大量资源进行技术原创研发，目前已经形成了完整的IT服务管理产品线，其中包括IT基础设施监控、APM应用性能管理，和ITIL服务流程管理。
+		</p>
+		<p class="aboutText col-4c5058 w1200 mauto">
+		创联致信通过开放创新、卓越管理、人才发展等战略的实施，全面打造公司的核心竞争力， 目前已在广东，山西，北京，浙江，东北等地区分别设有分支机构，全国省级市级超过一百个服务网点，具备完善的服务工师管理体系和培训体系。基于“智慧运维 引领未来”的使命，全面革新IT服务模式，致力打造IT运维云服务平台，为客户提供更广泛、更深入、更经济的IT服务，做中国智能运维的领航者。
+		</p>
+		<style>
+			.cultureCon{
+				position: relative;
+				margin-top: 66px;
+			}
+			.cultureList{
+				width: 33.33333%;
+				float: left;
+				text-align: center;
+			}
+			.cultureList .p{
+				margin-top:38px;
+				font-size: 20px;
+				font-weight: 800
+			}
+			.cultureList .text{
+				margin-top:20px;
+				font-size: 14px;
+			}
+			.cultureBor{
+				width:0px;
+				height: 111px;
+				position: absolute;
+				bottom:0px;
+				border-left:1px solid #cccccc;
+			}
+			.cultureBor1{
+				left:33.333%;
+			}
+			.cultureBor2{
+				left:66.66%
+			}
+		</style>
+		<div class="hrBor w1200 mauto"></div>
+		<p class="cultureH1 h1 w1200 mauto">企业文化</p>
+		<div class="cultureCon w1200 mauto clearfix">
+			<div class="cultureList">
+				<img src="/webpage/ch/cms/public/images/about/shiming.png" alt="">
+				<p class="p">公司使命</p>
+				<p class="text">挖潜IT价值助力客户业务高效运营</p>
+			</div>
+			<div class="cultureList">
+				<img src="/webpage/ch/cms/public/images/about/jiazhiguan2.png" alt="">
+				<p class="p">核心价值观</p>
+				<p class="text">客户优先 · 创新驱动 · 务实高效</p>
+			</div>
+			<div class="cultureList">
+				<img src="/webpage/ch/cms/public/images/about/yuanjing.png" alt="">
+				<p class="p">愿景</p>
+				<p class="text">共建生态 · 合作共赢  · 引领未来</p>
+			</div>
+			<div class="cultureBor cultureBor1"></div>
+			<div class="cultureBor cultureBor2"></div>
+		</div>
+		<div class="hrBor w1200 mauto"></div>
+		<style>
+			.serviceH1{
+				margin-top:60px;
+			}
+			.serverImg{
+				display: block;
+				margin: 132px auto 0 auto;
+			}
+			.honorCon{
+				margin-top:50px;
+				line-height: 34px;
+			}
+			.biaozhunImg{
+				display: block;
+				margin:64px auto 0 auto;
+			}
+		</style>
+		<p class="serviceH1 h1 w1200 mauto">主营业务</p>
+		<img class="serverImg" src="/webpage/ch/cms/public/images/about/server.jpg" alt="">
+		<div class="hrBor w1200 mauto"></div>
+		<p class="serviceH1 h1 w1200 mauto">资质荣誉</p>
+		<div class="honorCon w1200 mauto">
+			<p>1行业标准：国家IT服务标准组（ITSS）会员单位、烟草行业IT运维规范制定</p>
+			<p>2客户认可：中国烟草信息中心等1000多家客户高度认可</p>
+			<p>3技术创新：敏捷运维倡导者，40多项软件著作权及技术专利</p>
+			<p>4权威认证：高新技术企业认证、ISO9000质量体系认证、CMMI 软件能力模型认证、信息系统集成三级资质</p>
+		</div>
+		<img class="biaozhunImg" src="/webpage/ch/cms/public/images/about/biaozhun.jpg" alt="">
+		<script>
+		shareHTML();
+		function shareHTML(){
+			$("<div>").load('/webpage/ch/cms/include/share.html',function(text){
+				$(document.body).prepend(text)
+				menuHTML();
+			})
+		}
+		function menuHTML(){
+			$("<div>").load('/webpage/ch/cms/include/menu.html',function(text){
+				$(".content").prepend(text)
+				cooperationHTML();		
+			})
+		}
+		function cooperationHTML(){
+			$("<div>").load('/webpage/ch/cms/include/cooperation.html',function(text){
+				$(".content").append(text)
+				footerHTML();		
+			})
+		}
+		
+		function footerHTML(){
+			$("<div>").load('/webpage/ch/cms/include/footer.html',function(text){
+				$(".content").append(text)
+				frendLinkHTML();
+			})
+		}
+		function frendLinkHTML(){
+			$("<div>").load('/webpage/ch/cms/include/frendLink.html',function(text){
+				$(".content").append(text)
+			})
+		}
+		</script>
+	</div>
+</body>
+</html>

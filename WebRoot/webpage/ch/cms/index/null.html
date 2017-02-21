@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>创联致信-全栈敏捷运维软件提供商</title>
+	<link rel="stylesheet" href="/webpage/ch/cms/public/css/page.css">
+	<script src="/webpage/ch/cms/public/js/jquery-1.8.3.min.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<div class="content back-f0f3f8" id="content" name="content">
+		<style>
+			.bannerWarp{
+			  height: 556px;
+			  border-bottom: none;
+			  background-color: #fff;
+			}
+		</style>
+		<div class="warp bannerWarp borB4-dee1e5 pt1">
+			
+		</div>
+		<style>
+			.nullWarp{
+				padding-top:114px;
+				padding-bottom:318px;
+				margin-bottom: 212px;
+			}
+			.nullImg{
+				margin-left:auto;
+				margin-right:auto;
+				display: block;
+			}
+		</style>
+		<div class="warp nullWarp back-bde7f7">
+			<img class="nullImg" src="/webpage/ch/cms/public/images/null.jpg" alt="">
+		</div>
+		<script>
+		shareHTML();
+		function shareHTML(){
+			$("<div>").load('/webpage/ch/cms/include/share.html',function(text){
+				$(document.body).prepend(text)
+				menuHTML();
+			})
+		}
+		function menuHTML(){
+			$("<div>").load('/webpage/ch/cms/include/menu.html',function(text){
+				$(".content").prepend(text)
+				cooperationHTML();		
+			})
+		}
+		function cooperationHTML(){
+			$("<div>").load('/webpage/ch/cms/include/cooperation.html',function(text){
+				$(".content").append(text)
+				footerHTML();		
+			})
+		}
+		
+		function footerHTML(){
+			$("<div>").load('/webpage/ch/cms/include/footer.html',function(text){
+				$(".content").append(text)
+				frendLinkHTML();
+			})
+		}
+		function frendLinkHTML(){
+			$("<div>").load('/webpage/ch/cms/include/frendLink.html',function(text){
+				$(".content").append(text)
+			})
+		}
+		</script>
+	</div>
+</body>
+</html>
